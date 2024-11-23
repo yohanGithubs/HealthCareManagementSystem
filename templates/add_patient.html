@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Add Patient</h2>
+<form method="POST">
+    <label>First Name:</label>
+    <input type="text" name="first_name" required>
+    <label>Last Name:</label>
+    <input type="text" name="last_name" required>
+    <label>Date of Birth:</label>
+    <input type="date" name="dob" required>
+    <label>Gender:</label>
+    <select name="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+    </select>
+    <label>Phone:</label>
+    <input type="text" name="phone">
+    <label>Email:</label>
+    <input type="email" name="email">
+    <label>Address:</label>
+    <textarea name="address"></textarea>
+    <label>Insurance Provider:</label>
+    <input type="text" name="insurance_provider">
+    <label>Insurance Number:</label>
+    <input type="text" name="insurance_number">
+    <button type="submit">Add Patient</button>
+</form>
+{% endblock %}

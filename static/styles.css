@@ -1,0 +1,40 @@
+/* General styling for all tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Header styling */
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Alternating row colors */
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Hover effect */
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.9rem;
+    }
+}
